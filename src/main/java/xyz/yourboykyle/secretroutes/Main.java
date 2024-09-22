@@ -404,7 +404,7 @@ public class Main {
     public void onServerConnect(FMLNetworkEvent.ClientConnectedToServerEvent event) {
         Minecraft mc = Minecraft.getMinecraft();
         if (mc.getCurrentServerData() == null) return;
-        if (mc.getCurrentServerData().serverIP.toLowerCase().contains("hypixel.")) {
+        if (mc.getCurrentServerData().serverIP.toLowerCase().contains("fakepixel")) {
             if(SRMConfig.autoCheckUpdates) {
                 new Thread(() -> {
                     try {
