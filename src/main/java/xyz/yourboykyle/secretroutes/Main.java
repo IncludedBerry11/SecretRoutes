@@ -61,11 +61,15 @@ public class Main {
     public static final String MODID = "@ID@";
     public static final String NAME = "@NAME@";
     public static final String VERSION = "@VER@";
+    if (Minecraft.getMinecraft() != null) {
     public static final String ROUTES_PATH = Minecraft.getMinecraft().mcDataDir.getAbsolutePath() + File.separator + "config" + File.separator + "SecretRoutes"+File.separator+"routes";
     public static final String COLOR_PROFILE_PATH = Minecraft.getMinecraft().mcDataDir.getAbsolutePath() + File.separator + "config" + File.separator + "SecretRoutes"+File.separator+"colorprofiles";
     public static final String tmpDir = Minecraft.getMinecraft().mcDataDir.getAbsolutePath() + File.separator + "SecretRoutes" + File.separator + "tmp";
+    }
     private final static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    if (Minecraft.getMinecraft() != null) {
     public final static File logDir = new File(Minecraft.getMinecraft().mcDataDir.getAbsolutePath() + File.separator + "logs" + File.separator + "SecretRoutes");
+    }
     public static File outputLogs;
     private static final ResourceLocation SOUND_EVENT = new ResourceLocation("secretroutesmod", "custom_sound");
     public static SoundEvent customSound;
