@@ -429,7 +429,7 @@ public class Main {
                         Thread.sleep(100);
                     }
                     Thread.sleep(3000);
-                    if (mc.getCurrentServerData().serverIP.toLowerCase().contains("hypixel.")) {
+                    if (mc.getCurrentServerData().serverIP.toLowerCase().contains("fakepixel")) {
                         Utils.checkForConflictingHotkeys();
                     }
                 } catch (InterruptedException e) {
